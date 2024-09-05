@@ -65,7 +65,7 @@ Several issues were identified while exploring the data at the source, which inc
 2. Same issue as above with quantity of spare requisited.
 3. Lots of transactions made with improper description or no description at all making it difficult to trace what exactly that expense was for.
 
-![](transaction_NA.png)
+![](transactions_NA.png)
 
 The table above shows transactions without a description displayed as "NA" amounting to $215k in FY22-23 alone ranking among top 10 transactions in cost.
 

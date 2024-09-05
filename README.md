@@ -8,6 +8,7 @@ This analysis examines the maintenance costs of a manufacturing company, with th
 
 The process flow in arriving at the insights includes:
 - Exploring the different variables, datatypes and relationships contained in the dataset.
+- Collaboration with key stakeholders to better understand key objectives and challenges
 - Performing some transformation of the data from the source as data had no clear cut way of building relationships via primary or foreing keys
 - Connecting the folders (To facilitate automation of data refreshes) containing the datasets to Power BI
 - Building relationship between the different tables and writing DAX to generate extra information about the data.

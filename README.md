@@ -50,7 +50,7 @@ An analysis of consumables; exact spares, their volume of usage, the frequency o
 
 ## Price Trend
 Analysis of how the unit price of spares have changed over time, with some spares rising way beyond what can be explained by only inflation.
-![](Price_trend_1.png)
+![](price_trend_1.png)
 ---
 
 
@@ -64,7 +64,7 @@ Several issues were identified while exploring the data at the source, which inc
 2. Same issue as above with quantity of spare requisited.
 3. Lots of transactions made with improper description or no description at all making it difficult to trace what exactly that expense was for.
 
-![](Transaction.png)
+![](transaction_NA.png)
 
 The table above shows transactions without a description displayed as "NA" amounting to $215k in FY22-23 alone ranking among top 10 transactions in cost.
 
@@ -80,33 +80,44 @@ Influencing factors includes geaographic location with high cost of importing sp
 Also, the general downtrend in prodiction volume due to possible economic conditions and inflation leading to lower purchasing power of people and hence lower sales demands did not affect maintenance cost as its expected that both ought to be directly proportional.
 
 
-### Customer Orders
-Orders starts coming in as early as 1am ranging from 18-48 orders per hour between 1am and 4am. However, the busiest hours of the day is usually between 7am-11:30am where orders can peek at 158 per hour. On average, about 1,070 orders are placed across Maven Roaters three retail outlets daily.
+### Inventory vs Purchase Orders
+The benefits of properly maintaining a stock of critical spare parts, tools, and materials required for equipment maintenance far outweighs the benefits of raising purchase orders when parts, tools, or services are not available in inventory and need to be sourced from external vendors. Urgent orders often come with premium costs, affecting overall budget.
 
-![](Busiest.png)
+![](Inventory.png)
 
-
-
-The charts below is a reflection of average monthly orders. The right chart shows orders including the current year 2019 (only recorded 3 months) while the left chart excluded 2019. With 2019 included, there is a spike in revenue between march and april which was due to the 67% increase in sales revenue between 2018 and 2019 februaries.
-
-With 2019                          | Without 2019
-:----------------------------------|:---------------------------:
-![](Average_monhly_ordered.png)    |    ![](without_2019.png)
+An increase in Purchase orders can be seen from the analysis over the years. Major drivers for this have been categorised and analyzed, with forklifts, fasternes, pumps, drives and battery related spares being top 5 at over 60%
 
 
+### Most consumed spares and how they drive maintenance cost up
+Spares like belts, bearings, ribbons, filters, etc. account for top 5 most requisited items. They are the major cost drivers, with highest in quantity and frequency of requisition, being requisited multiple times in a month and every month in every fiscal year.
 
-Customers with highest orders are predominantly females with 22%, although a larger portion of customer orders at 67% did not specify gender. 
-**Note that Top 4 customers are females.**
+![](top_spares1.png)
+![](top_spares2.png)
 
-![](Top_customer.png)
 
+### How has unit price of spares changed over time?
+The analysis revealed several spares with ridiculous percentage increase in unit price , some over a very short time frame.
+
+![](price_trend_2.png)
+
+This shows an item (Pipe; pvc DN 25 Class unplasticized pressure grey) with 5 transactions made over 3 years first on June 25th 2021 at a unit price of $12.55 and its most recent transaction 15 months later at $93.99 giving an increase of 649%.
+This is beyond inflation and points to requisition issues, supplychain disruption or possible supplier monopolies amongst many ogther possible factors.
 
 
 # Recommendations
-- If the dip in february is due to weather conditions at the beginnning of the year, then stock levels can be controlled to avoid holding excess inventory.
-- An increased sales and profits can be recorded if more female appealing products and adverts are made.
-- Encouraging customers to reveal gender can help with decisions on adverts and tailor made products appealing to specific gender.
+- Keep inventory of high-use, critical components, and rely on purchase orders for non-essential or rarely used parts.
+  Improvement is required in Narration /Description as the highest expense as sorted have no detail description ( this should be corrected ASAP-contact ERP)
+- Control measures are to be put in place to reduce high consumptions in various categories of spares and consumables like lubricants, bearings, belts, pumps and filters for cost reduction
+- Accessment of equipment to establish age as older equipment generally incurs higher maintenance costs due to wear and tear and less efficient operation.
+- Wrong Postings and classification are common  -All ERP users should be retrained.
+- Postings and approvals should be real time to facilitate accountability and transparency.
+- There is need for improvement in lubricant storage, issuing, and usage control. Decanting from drums should be tracked, and quantity used should be entered on the work order and should match what is on the lubrication record.
+- Regular Out of Stock Report and Consumption Report should be prepared by Store Manager to Operations Head for improvement
+- Personnel is expected to review the company's obsolete list before ordering any spare parts.
+- Use data analytics and maintenance history to forecast parts usage and optimize inventory levels.
+
+
 
 ---
 
-# This was really fun for me, thank you for getting to the end!
+# Thank you for getting to the end, I am very enthusiastic about manufacturing and always seeking out ways to improve processes!

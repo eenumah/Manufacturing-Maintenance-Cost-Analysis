@@ -19,50 +19,65 @@ The process flow in arriving at the insights includes:
 
 # Modelling
 
-![](Relationship_model.png)  
+![](Modelling.png)  
 ---
 Sample DAX 1         | Sample DAX 2  
 :-------------------:|:-----------------:
-![](DAX_1.png)       | ![](DAX_2.png) 
+![](DAX1.png)       | ![](DAX3.png) 
+
+![](DAX2.png) 
 ---
 # Visualization
-The report comprises of 3 pages:
+The report comprises of 4 pages:
 - Homepage
-- Sales and Profits
-- Customers Orders
+- Overview
+- Usage
+- Price trend
 
 
 
 ## Homepage
-![](Homepage.png)
+Contains buttons at the top right to allow for easy navigation between report pages.
+![](Home_page.png)
 
-## Revenue and Profits
-![](Customer_Sales_and_Profit.png)
+## Overview
+A summary of major cost drivers, Inventory vs Purchase orders ratio and maintenance cost per ton trend against volume.
+![](Overview.png)
 
-## Customer Orders
-![](Customer_ORDER.png)
+## Usage
+An analysis of consumables; exact spares, their volume of usage, the frequency of usage and the amount incurred
+![](Usage_1.png)
+
+## Price Trend
+Analysis of how the unit price of spares have changed over time, with some spares rising way beyond what can be explained by only inflation.
+![](Price_trend_1.png)
 ---
 
 
 
 # Analysis
-Maven Roasters comprises of 1 warehouse and 3 retail stores located in Newyork with 5,198 customers served by 55 employees ranging from Coffe wranglers, Roasters and Store managers with 88 blend of products across 9 different product categories.
+This analysis was done with flour production in mind, hence data and analysis have been tailored accordingly. However, this can apply to most manufacturing companies, especially food and beverage.
+
+### Data Issues
+Several issues were identified while exploring the data at the source, which includes;
+1. Poor requisition process. For example, an item costing $1500 is requisited and later reversed, on requisition the data shows a value of -$1500 but after beign reversed it shows +$0 instead of +$1500
+2. Same issue as above with quantity of spare requisited.
+3. Lots of transactions made with improper description or no description at all making it difficult to trace what exactly that expense was for.
+
+![](Transaction.png)
+
+The table above shows transactions without a description displayed as "NA" amounting to $215k in FY22-23 alone ranking among top 10 transactions in cost.
 
 
+### Maintenance Cost per Ton
+The industry standard maintenance cost per ton in flour milling can vary significantly depending on several factors, including the location, scale of the operation, age and condition of the equipment, and specific processes used in the milling operation. However, some general benchmarks can be provided. Approximate maintenance cost for smaller mills range between $1 to $3 per ton of milled flour, while medium to large mills may have maintenance costs ranging from $0.5 to $1.5 per ton, benefiting from economies of scale and more advanced technology. For a typical, well-maintained flour milling operation, maintenance costs are often budgeted at around 1% to 3% of the total operating costs, with a specific target of $0.5 to $2 per ton of product being a common industry figure.
 
-### Revenue and Profit
-Analysis shows high profitability in the current year at 90% vs last year and a profit margin ranging from 61% to 83% (74% on average) across a variety of product groups, with **Whole bean/Tea being the highest followed by Merchandise.** Top 3 most profitable products are Coffee, Tea and Drinking Chocolate with 75% profit margin under the Beverages product group.
+![](maintenance_cost_per_ton.png)
 
-![](Product_group_profit_margin.png)
+The chart shows a maintenance cost between $1 to $5 in the first fiscal year, $2.4 to $4.5 in the second fiscal year, and $4.5 to $6.9 in FY22-23. This is way above the industry average for medium to large scale operations.
+Influencing factors includes geaographic location with high cost of importing spares and economic conditions like high inflation rate, age of equipment and maintenance strategies.
 
-
-
-Further analysis revealed consistent yearly dip in February and peek in November with respect to revenue. Comparing revenues generated for February 2017 ($139k) and February 2018 ($149k), we noticed a 7% increase meanwhile about 67% increase between 2018 and 2019 February ($232k-current year) was recorded. If this trend continues, November could peek with over 20% of February 2019 sales revenue. 
-
-![](Dip_and_peek.png)
-
-![](Top_10_most_profitable_products.png)
-
+Also, the general downtrend in prodiction volume due to possible economic conditions and inflation leading to lower purchasing power of people and hence lower sales demands did not affect maintenance cost as its expected that both ought to be directly proportional.
 
 
 ### Customer Orders

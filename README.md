@@ -102,12 +102,12 @@ The analysis revealed several spares with ridiculous percentage increase in unit
 ![](price_trend_2.png)
 
 This shows an item (Pipe; pvc DN 25 Class unplasticized pressure grey) with 5 transactions made over 3 years first on June 25th 2021 at a unit price of $12.55 and its most recent transaction 15 months later at $93.99 giving an increase of 649%.
-This is beyond inflation and points to requisition issues, supplychain disruption or possible supplier monopolies amongst many ogther possible factors.
+This is beyond inflation and points to requisition issues, supplychain disruption or possible supplier monopolies amongst many other possible factors.
 
 
 # Recommendations
 - Keep inventory of high-use, critical components, and rely on purchase orders for non-essential or rarely used parts.
-  Improvement is required in Narration /Description as the highest expense as sorted have no detail description ( this should be corrected ASAP-contact ERP)
+- Improvement is required in Narration /Description as the highest expense as sorted have no detail description ( this should be corrected ASAP-contact ERP)
 - Control measures are to be put in place to reduce high consumptions in various categories of spares and consumables like lubricants, bearings, belts, pumps and filters for cost reduction
 - Accessment of equipment to establish age as older equipment generally incurs higher maintenance costs due to wear and tear and less efficient operation.
 - Wrong Postings and classification are common  -All ERP users should be retrained.
